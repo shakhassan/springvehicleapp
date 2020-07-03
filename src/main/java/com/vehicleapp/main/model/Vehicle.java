@@ -12,9 +12,9 @@ import javax.persistence.GenerationType;
 public class Vehicle {
 	
 	@Id
-	@GeneratedValue(strategy=GenerationType.AUTO)
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Integer id;
-	private String year;
+	private Integer year;
 	private String make;
 	private String model;
 	
@@ -24,10 +24,10 @@ public class Vehicle {
 	public void setId(Integer id) {
 		this.id = id;
 	}
-	public String getYear() {
+	public Integer getYear() {
 		return year;
 	}
-	public void setYear(String year) {
+	public void setYear(Integer year) {
 		this.year = year;
 	}
 	public String getMake() {
